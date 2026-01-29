@@ -1,0 +1,215 @@
+:root {
+    --primary-color: #f4f7f6; 
+    --accent-color: #76a5af;  
+    --text-color: #333;
+}
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    background-image: url('fondo-colibries.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+  
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    background: white;
+    color: var(--text-color);
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    border: 1px solid #eee;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    border-color: var(--accent-color);
+}
+
+.btn-whatsapp {
+    background-color: #25D366 !important; 
+    color: white !important;
+    font-weight: bold;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E !important; /* Un verde más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Pequeño salto para que se sienta interactivo */
+}
+/* Esto hace que el movimiento sea suave y no un salto de golpe */
+html {
+    scroll-behavior: smooth;
+}
+
+.bio-section {
+    margin-top: 50px; /* Espacio para que no esté pegado a los botones */
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    text-align: left; /* La bio suele leerse mejor alineada a la izquierda */
+}
+
+.bio-section h2 {
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.btn-back {
+    background-color: transparent !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+.bio-image-container {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.bio-photo {
+    width: 100%;
+    max-width: 300px; /* Para que no sea gigante en pantallas grandes */
+    height: auto;
+    border-radius: 20px; /* Esos bordes redondeados que dan suavidad */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Sombra para darle profundidad */
+    border: 3px solid white; /* Un pequeño marco blanco para resaltar */
+}
+/* Estilo para el botón de Google Maps */
+.btn-maps {
+    background-color: #4285F4 !important; /* Azul oficial de Google */
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none !important;
+}
+
+.btn-maps:hover {
+    background-color: #357ae8 !important;
+    transform: scale(1.03);
+}.logo-and-title {
+    display: flex; /* La magia para ponerlos lado a lado */
+    align-items: center; /* Centra el logo verticalmente con el texto */
+    justify-content: center; /* Mantiene todo al centro del contenedor */
+    gap: 15px; /* El espacio exacto entre el logo y el nombre */
+    margin-bottom: 10px;
+}
+
+.site-logo {
+    width: 50px; /* Ajusta este tamaño según qué tan grande sea el logo */
+    height: auto;
+    border-radius: 8px; /* Un toque de suavidad en las esquinas */
+}
+
+/* Para que el subtítulo no quede pegado */
+.subtitle {
+    margin-top: 5px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+/* Estilo para el logo redondo al lado del nombre */
+.site-logo {
+    width: 65px; /* Lo subimos un poco para que se vea mejor */
+    height: 65px; /* Debe ser igual al width para que sea un círculo perfecto */
+    object-fit: cover; /* Para que la imagen no se estire si no es cuadrada */
+    border-radius: 50%; /* Esto lo hace redondo */
+    border: 2px solid white; /* Un marquito blanco para que resalte del fondo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Una sombra suave para darle nivel */
+}
+
+/* Ajuste para que el contenedor de título y logo se vea impecable */
+.logo-and-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Por si el nombre de la Dra queda muy grande al lado del logo */
+.logo-and-title h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+header {
+    margin-bottom: 30px; /* Espacio entre el encabezado y los botones */
+    text-align: center;
+}
+
+.site-logo-header {
+    width: 300px; /* Tamaño generoso para que se luzca */
+    height: 300px;
+    border-radius: 50%; /* Redondo total */
+    object-fit: cover;
+    margin-bottom: 15px; /* Espacio antes del nombre */
+    border: 4px solid white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* Sombra para que resalte sobre los colibríes */
+    background-color: white; /* Por si el logo tiene transparencia, que se vea limpio */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 5px 0;
+}
+.reviews-section {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.7); /* Transparente para que se vean los colibríes */
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #fbbc05; /* El color amarillo de las estrellas de Google */
+    text-align: left;
+}
+
+.stars {
+    color: #fbbc05;
+    margin-bottom: 5px;
+}
+
+.reviewer {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--accent-color);
+}
