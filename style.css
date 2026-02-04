@@ -213,3 +213,29 @@ h1 {
     margin-top: 10px;
     color: var(--accent-color);
 }
+.credential-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.credential-card h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+.verify-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #4285F4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.verify-link:hover {
+    text-decoration: underline;
+}
